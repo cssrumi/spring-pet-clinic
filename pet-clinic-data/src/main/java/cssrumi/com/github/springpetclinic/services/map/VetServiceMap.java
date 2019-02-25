@@ -1,11 +1,11 @@
 package cssrumi.com.github.springpetclinic.services.map;
 
 import cssrumi.com.github.springpetclinic.model.Vet;
-import cssrumi.com.github.springpetclinic.services.CrudService;
+import cssrumi.com.github.springpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {

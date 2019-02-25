@@ -2,10 +2,11 @@ package cssrumi.com.github.springpetclinic.services.map;
 
 import cssrumi.com.github.springpetclinic.model.Pet;
 import cssrumi.com.github.springpetclinic.services.CrudService;
+import cssrumi.com.github.springpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
@@ -31,4 +32,5 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements Crud
     public Pet findById(Long id) {
         return super.findById(id);
     }
+
 }

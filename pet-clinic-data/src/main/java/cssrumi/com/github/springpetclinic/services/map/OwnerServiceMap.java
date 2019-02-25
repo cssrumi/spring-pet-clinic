@@ -2,9 +2,11 @@ package cssrumi.com.github.springpetclinic.services.map;
 
 import cssrumi.com.github.springpetclinic.model.Owner;
 import cssrumi.com.github.springpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

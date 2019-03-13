@@ -4,6 +4,6 @@ import cssrumi.com.github.springpetclinic.model.Pet;
 
 public interface PetService extends CrudService<Pet, Long> {
 
-    Pet findById(Long id);
+    Pet findById(Long aLong);
 
 }

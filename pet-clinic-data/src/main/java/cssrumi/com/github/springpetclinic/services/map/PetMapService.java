@@ -1,14 +1,15 @@
 package cssrumi.com.github.springpetclinic.services.map;
 
 import cssrumi.com.github.springpetclinic.model.Pet;
-import cssrumi.com.github.springpetclinic.services.CrudService;
 import cssrumi.com.github.springpetclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+@Profile({"default", "map"})
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
@@ -16,8 +17,8 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetS
     }
 
     @Override
-    public void deleteById(Long id) {
-        super.deleteById(id);
+    public void deleteById(Long aLong) {
+        super.deleteById(aLong);
     }
 
     @Override
@@ -31,8 +32,8 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetS
     }
 
     @Override
-    public Pet findById(Long id) {
-        return super.findById(id);
+    public Pet findById(Long aLong) {
+        return super.findById(aLong);
     }
 
 }

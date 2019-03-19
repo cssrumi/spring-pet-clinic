@@ -53,7 +53,6 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
         } else {
             return null;
         }
-
     }
 
     @Override
